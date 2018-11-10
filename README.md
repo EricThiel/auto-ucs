@@ -5,31 +5,29 @@ Automation management of UCS devices through UCS-M without requiring in-band con
 
 ## Business/Technical Challenge
 
-**TODO:** 1-3 paragraphs of the business/technical Challenge
+Today using UCSM to manage servers requires that FIs be in the data path for servers. For a number of reasons, including additional points of failure, additional bottlenecks, and additional expense, many customers do not wish to inject the FIs directly into the data plane, but would still like to leverage the management plane it offers. For those customers, Intersight does not yet offer the full suite of features, nor an on-prem capability. 
 
 ## Proposed Solution
 
 
-**TODO:** 1-3 paragraphs of the solution in written format
+This solution aims to migrate configuration from UCS Manager (e.g. service profiles) to IMC Supervisor and applies those configurations to UCS-C series. The solution will allow for creation and management of service profiles via UCSM, while servers can be connected directly to Nexus switches or ACI fabrics. Once connected, the solution will auto-discuver the UCS and use IMC-Supervisor to push the service profile attributes down to each server. 
 
 
 ### Cisco Products Technologies/ Services
 
-**TODO:** List out major technologies included in the solution (ACI, DNAC, third party, etc) e.g
-
 Our solution will levegerage the following Cisco technologies
 
+* UCS
+* IMC-Supervisor
 * [Application Centric Infrastructure (ACI)](http://cisco.com/go/aci)
-* [DNA Center (DNA-C)](http://cisco.com/go/dna)
+* NX-OS
+
 
 ## Team Members
 
 
-**TODO:** ASIC projects must consist of a minimum of 2 SE’s
-representing a minimum of 2 segments. List names here
-
-* team member1 <email> - Segment Name
-* team member2 <email> - Segment Name
+* Eric Thiel <erthiel@cisco.com> - GES West
+* Santiago Flores Kanter <sfloresk@cisco.com> - Service Provider
 
 
 ## Solution Components
